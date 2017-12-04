@@ -481,6 +481,7 @@ if __name__ == "__main__":
     for value in bets:
         total_bet += value
 
+    print "\n%d hands overall, %0.2f hands per game on average %" (nb_hands, float(nb_hands) / GAMES)    
     print "%0.2f total bet" % total_bet
     print("Overall winnings: {} (edge = {} %)".format("{0:.2f}".format(sume), "{0:.3f}".format(100.0*sume/total_bet)))
 
